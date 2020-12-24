@@ -11,7 +11,7 @@ function shorten(){
             code+=Alphabets.charAt(Math.floor(Math.random() * Alphabets.length));
         }
         if(sessionStorage.getItem(code) || set.has(document.getElementById("tocompress").value)){
-            alert("already have key");
+            alert("already have shortened");
             break;
         }else{
             set.add(document.getElementById("tocompress").value);
